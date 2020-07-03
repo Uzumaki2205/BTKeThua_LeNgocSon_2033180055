@@ -34,9 +34,7 @@ tiền = số ca, ngược lại số ca vượt sẽ được tính gấp 2.
 - Đếm số nhân viên của từng loại.
 - Xuất thông tin các nhân viên hành chính có hệ số thi đua là 1.0
 - Xuất thông tin nhân viên có lương cao nhất/thấp nhất
-## Bài 2. Một người bao gồm các thông tin: họ tên, ngày sinh, giới tính (giới tính là “nam”
-hoặc “nữ”). Sinh viên của một trường là một người và có thêm các thuộc tính: mã số sinh
-viên, hệ đào tạo, tổng số tín chỉ. Hệ thống quản lý bao gồm các yêu cầu chi tiết như sau:
+## Bài 2. Một người bao gồm các thông tin: họ tên, ngày sinh, giới tính (giới tính là “nam” hoặc “nữ”). Sinh viên của một trường là một người và có thêm các thuộc tính: mã số sinh viên, hệ đào tạo, tổng số tín chỉ. Hệ thống quản lý bao gồm các yêu cầu chi tiết như sau:
 ### a. Lớp người:
 - Xây dựng lớp với các thuộc tính trên.
 - Xây dựng phương thức khởi tạo mặc định. Giới tính mặc định là “nam”

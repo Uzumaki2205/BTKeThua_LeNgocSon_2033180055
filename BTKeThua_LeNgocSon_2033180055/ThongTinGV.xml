@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<DSGV>
+  <GV>
+    <Name>Giảng viên 1</Name>
+    <BirthDay>
+      <Day>10</Day>
+      <Month>12</Month>
+      <Year>1998</Year>
+    </BirthDay>
+    <Sex>Nam</Sex>
+    <ID>23112</ID>
+    <Role>phó khoa</Role>
+    <Figure>2.34</Figure>
+    <Type>giảng viên cơ hữu</Type>
+    <Level>cử nhân</Level>
+    <IsGoScholl>không đi học</IsGoScholl>
+    <Hours>301</Hours>
+  </GV>
+  <GV>
+    <Name>Giảng viên 2</Name>
+    <BirthDay>
+      <Day>1</Day>
+      <Month>10</Month>
+      <Year>1992</Year>
+    </BirthDay>
+    <Sex>Nam</Sex>
+    <ID>0005</ID>
+    <Role>trưởng khoa</Role>
+    <Figure>3.3</Figure>
+    <Type>giảng viên thỉnh giảng</Type>
+    <Level>thạc sĩ</Level>
+    <IsGoScholl>đi học</IsGoScholl>
+    <Hours>306</Hours>
+  </GV>
+  <GV>
+    <Name>Giảng viên 3</Name>
+    <BirthDay>
+      <Day>4</Day>
+      <Month>10</Month>
+      <Year>1995</Year>
+    </BirthDay>
+    <Sex>nữ</Sex>
+    <ID>642</ID>
+    <Role>giảng viên</Role>
+    <Figure>3.3</Figure>
+    <Type>giảng viên cơ hữu</Type>
+    <Level>tiến sĩ</Level>
+    <IsGoScholl>không đi học</IsGoScholl>
+    <Hours>300</Hours>
+  </GV>
+</DSGV>

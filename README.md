@@ -1,8 +1,6 @@
 ﻿# BÀI TẬP KẾ THỪA
 ## Bài 1. Một người bao gồm các thông tin: họ tên, ngày sinh, giới tính (giới tính là “nam” hoặc “nữ”).
-Nhân viên của một công ty là một người và có thêm các thuộc tính: mã số nhân viên,
-lương cơ bản, chức vụ và hệ số chức vụ. Hệ thống quản lý bao gồm các yêu cầu chi tiết
-như sau:
+## Nhân viên của một công ty là một người và có thêm các thuộc tính: mã số nhân viên, lương cơ bản, chức vụ và hệ số chức vụ. Hệ thống quản lý bao gồm các yêu cầu chi tiết như sau:
 ### a. Lớp người:
 - Xây dựng lớp với các thuộc tính trên.
 - Xây dựng phương thức khởi tạo mặc định. Giới tính mặc định là “nam”
@@ -38,15 +36,13 @@ tiền = số ca, ngược lại số ca vượt sẽ được tính gấp 2.
 ### a. Lớp người:
 - Xây dựng lớp với các thuộc tính trên.
 - Xây dựng phương thức khởi tạo mặc định. Giới tính mặc định là “nam”
-- Xây dựng phương thức khởi tạo có tham số, nếu tham số giới tính truyền vào
-không rơi vào một trong hai trường hợp “nam” hoặc “nữ” thì thuộc tính giới
-tính là “nam”
+- Xây dựng phương thức khởi tạo có tham số, nếu tham số giới tính truyền vào không rơi vào một trong hai trường hợp “nam” hoặc “nữ” thì thuộc tính giới tính là “nam”
 - Xây dựng phương thức xuất một người
 ### b. Lớp sinh viên
 - Xây dựng lớp sinh viên kế thừa lớp người và các thuộc tính bổ sung.
-- Xây dựng phương thức khởi tạo có tham số. Thuộc tính hệ đào tạo là một trong 3
-giá trị “đại học”, “cao đẳng” và “cao đẳng nghề”. Nếu tham số hệ đào tạo không
-thuộc một trong ba trường hợp này thì thiết lập hệ đào tạo là “đại học”. Thuộc tính tổng số tín chỉ được tính như sau:
+- Xây dựng phương thức khởi tạo có tham số. Thuộc tính hệ đào tạo là một trong 3 giá trị “đại học”, “cao đẳng” và “cao đẳng nghề”. 
+Nếu tham số hệ đào tạo không thuộc một trong ba trường hợp này thì thiết lập hệ đào tạo là “đại học”. 
+Thuộc tính tổng số tín chỉ được tính như sau:
 - Nếu hệ đào tạo là “đại học” thì tổng số tín chỉ là 150
 - Nếu hệ đào tạo là “cao đẳng” thì tổng số tín chỉ là 100
 - Nếu hệ đào tạo là “cao đẳng nghề” thì tổng số tín chỉ là 130
@@ -56,9 +52,9 @@ tổng học phí = tổng số tín chỉ * học phí tín chỉ. Trong đó, 
 - Nếu hệ đào tạo là “đại học” thì học phí tín chỉ = 200.000
 - Nếu hệ đào tạo là “cao đẳng” thì học phí tín chỉ = 150.000
 - Nếu hệ đào tạo là “cao đẳng nghề” thì học phí tín chỉ = 120.000
-## Bài 3. Một người bao gồm các thông tin: họ tên, ngày sinh, giới tính (giới tính là “nam”
-hoặc “nữ”). Giảng viên của một trường là một người và có thêm các thuộc tính: mã số,
-lương cơ bản, hệ số, chức vụ. Hệ thống quản lý bao gồm các yêu cầu chi tiết như sau:
+## Bài 3. Một người bao gồm các thông tin: họ tên, ngày sinh, giới tính (giới tính là “nam” hoặc “nữ”). 
+## Giảng viên của một trường là một người và có thêm các thuộc tính: mã số, lương cơ bản, hệ số, chức vụ. 
+## Hệ thống quản lý bao gồm các yêu cầu chi tiết như sau:
 ### a. Lớp người:
 - Xây dựng lớp với các thuộc tính trên.
 - Xây dựng phương thức khởi tạo mặc định. Giới tính mặc định là “nam”- Xây dựng phương thức khởi tạo có tham số, nếu tham số giới tính truyền vào
@@ -99,38 +95,37 @@ nâng cao mà có số tiết dạy chuẩn trong 1 năm theo qui định sau:
 - Tìm giảng viên có số tiền vượt giờ nhiều nhất/ít nhất.
 - Đếm số giảng viên có trình độ cử nhân/thạc sỹ/tiến sĩ.
 ## Bài 4. Một hàng hóa bao gồm các thông tin: mã hàng và tên hàng. 
-## Nước giải khát là một hàng hóa và có thêm các thuộc tính: đơn vị tính, số lượng, đơn giá. Hệ thống quản lý bao gồm các yêu cầu chi tiết như sau:a. Lớp hàng hóa:
-### a. Xây dựng lớp với các thuộc tính trên.
+## Nước giải khát là một hàng hóa và có thêm các thuộc tính: đơn vị tính, số lượng, đơn giá. 
+## Hệ thống quản lý bao gồm các yêu cầu chi tiết như sau:
+### a. Lớp hàng hóa:
+- Xây dựng lớp với các thuộc tính trên.
 - Xây dựng phương thức khởi tạo mặc định, mã hàng và tên hàng đều rỗng
-- Xây dựng phương thức khởi tạo có tham số. Mã hàng có kiểu chuỗi có chiều
-dài là 5 ký tự, 2 ký tự đầu là “HH”, 3 ký tự sau là số. Nếu tham số mã hàng
-không đúng quy tắc này thì thì khởi tạo mã hàng là “HH001”
+- Xây dựng phương thức khởi tạo có tham số. Mã hàng có kiểu chuỗi có chiều dài là 5 ký tự, 2 ký tự đầu là “HH”, 3 ký tự sau là số. 
+Nếu tham số mã hàng không đúng quy tắc này thì thì khởi tạo mã hàng là “HH001”
 - Xây dựng phương thức xuất một hàng hóa
 ### b. Lớp Nước giải khát
 - Xây dựng lớp Nước giải khát kế thừa lớp hàng hóa và các thuộc tính bổ sung.
-- Xây dựng phương thức khởi tạo có tham số. Lưu ý: đơn vị tính chỉ nhận 1 trong 4 giá
-trị: “kết”, “thùng”, “chai”, “lon”. Nếu đơn vị tính không thuộc 1 trong 4 tham số trên thì
-gán đơn vị tính là “kết”
+- Xây dựng phương thức khởi tạo có tham số. Lưu ý: đơn vị tính chỉ nhận 1 trong 4 giá trị: “kết”, “thùng”, “chai”, “lon”. 
+Nếu đơn vị tính không thuộc 1 trong 4 tham số trên thì gán đơn vị tính là “kết”
 - Xây dựng phương thức xuất Nước giải khát
 - Xây dựng phương thức thành tiền dựa vào đơn vị tính (DVT) như sau:
 - DVT = “kết” hoặc “thùng” -> thành tiền = số lượng * đơn giá
 - DVT = “chai” -> thành tiền = số lượng * đơn giá / 20
 - DVT = “lon” -> thành tiền = số lượng * đơn giá /24
 ## Bài 5. Một hàng hóa bao gồm các thông tin: mã hàng và tên hàng. 
-## Dầu gội là một hàng hóa và có thêm các thuộc tính: đơn vị tính, số lượng, đơn giá, xuất xứ. Hệ thống quản lý bao gồm các yêu cầu chi tiết như sau:
+## Dầu gội là một hàng hóa và có thêm các thuộc tính: đơn vị tính, số lượng, đơn giá, xuất xứ. 
+## Hệ thống quản lý bao gồm các yêu cầu chi tiết như sau:
 ### e. Lớp hàng hóa:
 - Xây dựng lớp với các thuộc tính trên.
 - Xây dựng phương thức khởi tạo mặc định, mã hàng và tên hàng đều rỗng
-- Xây dựng phương thức khởi tạo có tham số. Mã hàng có kiểu chuỗi có chiều
-dài là 5 ký tự, 2 ký tự đầu là “MH”, 3 ký tự sau là số. Nếu tham số mã hàng
-không đúng quy tắc này thì thì khởi tạo mã hàng là “MH001”
+- Xây dựng phương thức khởi tạo có tham số. Mã hàng có kiểu chuỗi có chiều dài là 5 ký tự, 2 ký tự đầu là “MH”, 3 ký tự sau là số. 
+Nếu tham số mã hàng không đúng quy tắc này thì thì khởi tạo mã hàng là “MH001”
 - Xây dựng phương thức xuất một hàng hóa
 ### f. Lớp Dầu gội:
 - Xây dựng lớp Dầu gội kế thừa lớp hàng hóa và các thuộc tính bổ sung.
-- Xây dựng phương thức khởi tạo có tham số. Lưu ý: đơn vị tính chỉ nhận 1 trong 3 giá
-trị: “chai”, “bịch” và “hộp”. Nếu đơn vị tính không thuộc 1 trong 3 tham số trên thì gán
-đơn vị tính là “chai”. Xuất xứ chỉ nhận 1 trong 2 giá trị “Trong nước” và “Nước ngoài”,
-nếu xuất xứ không thuộc 1 trong 2 giá trị này thì gán xuất xứ là “Trong nước”
+- Xây dựng phương thức khởi tạo có tham số. Lưu ý: đơn vị tính chỉ nhận 1 trong 3 giá trị: “chai”, “bịch” và “hộp”. 
+Nếu đơn vị tính không thuộc 1 trong 3 tham số trên thì gán đơn vị tính là “chai”. 
+Xuất xứ chỉ nhận 1 trong 2 giá trị “Trong nước” và “Nước ngoài”, nếu xuất xứ không thuộc 1 trong 2 giá trị này thì gán xuất xứ là “Trong nước”
 - Xây dựng phương thức xuất Dầu gội
 - Xây dựng phương thức thành tiền dựa vào đơn vị tính (DVT) và xuất xứ như sau:
 - Nếu xuất xứ là “trong nước”

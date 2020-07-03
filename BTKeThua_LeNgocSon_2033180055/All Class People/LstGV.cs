@@ -17,6 +17,7 @@ namespace BTKeThua_LeNgocSon_2033180055
         internal List<GVCH> ListGVCH { get => listGVCH; set => listGVCH = value; }
         internal List<GVTG> ListGVTG { get => listGVTG; set => listGVTG = value; }
 
+        string fileName = "D:\\CODE\\C#\\C# Tutorial\\BTKeThua_LeNgocSon_2033180055\\BTKeThua_LeNgocSon_2033180055\\All Class People\\ThongTinGV.xml";
         string type;
         int demtg = 0;
         int demch = 0;
@@ -25,7 +26,7 @@ namespace BTKeThua_LeNgocSon_2033180055
             Console.Write("\n--------------READ XML FILE------------\n");
             
             XmlDocument reader = new XmlDocument();
-            reader.Load("D:\\CODE\\C#\\C# Tutorial\\BTKeThua_LeNgocSon_2033180055\\BTKeThua_LeNgocSon_2033180055\\ThongTinGV.xml");
+            reader.Load(fileName);
             
             foreach (XmlNode node in reader.DocumentElement.ChildNodes)
             {
@@ -39,6 +40,7 @@ namespace BTKeThua_LeNgocSon_2033180055
                 //        string loc = locNode.InnerText;
                 //    } 
                 //}
+
                 GiangVien a = new GiangVien();
                 a.Hoten = node["Name"].InnerText;
                 XmlNodeList lstBirthday = node["BirthDay"].ChildNodes;
@@ -85,16 +87,29 @@ namespace BTKeThua_LeNgocSon_2033180055
             Console.WriteLine("Giáo viên cơ hữu: " + demch);
         }
 
-        public string Tim_GVCH_DayVuotGio_NhieuNhat()
+        public GiangVien Tim_GVCH_DayVuotGio_NhieuNhat()
         {
-            GiangVien a = new GiangVien();
+            
             int max = 0;
-            string tempName = "";
+            GiangVien temp = new GiangVien();
+           
             XmlDocument reader = new XmlDocument();
-            reader.Load("D:\\CODE\\C#\\C# Tutorial\\BTKeThua_LeNgocSon_2033180055\\BTKeThua_LeNgocSon_2033180055\\ThongTinGV.xml");
+            reader.Load(fileName);
             foreach (XmlNode node in reader.DocumentElement.ChildNodes)
             {
+                GiangVien a = new GiangVien();
                 a.Hoten = node["Name"].InnerText;
+                XmlNodeList lstBirthday = node["BirthDay"].ChildNodes;
+                a.Ngaysinh = new DateTime(
+                    int.Parse(lstBirthday[2].InnerText),
+                    int.Parse(lstBirthday[1].InnerText),
+                    int.Parse(lstBirthday[0].InnerText)
+                    );
+                a.Gioitinh = node["Sex"].InnerText;
+                a.Id = node["ID"].InnerText;
+                a.ChucVu = node["Role"].InnerText;
+                a.HeSo = float.Parse(node["Figure"].InnerText);
+
                 GVCH g = new GVCH();
 
                 if (node["Type"].InnerText == "giảng viên cơ hữu")
@@ -104,11 +119,11 @@ namespace BTKeThua_LeNgocSon_2033180055
                     if (max <= g.SoGio)
                     {
                         max = g.SoGio;
-                        tempName = a.Hoten;
+                        temp = a;
                     }
                 }
             }
-            return tempName;
+            return temp;
         }
     }
 }

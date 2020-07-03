@@ -42,21 +42,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="GiangVien.cs" />
-    <Compile Include="GVCH.cs" />
-    <Compile Include="GVTG.cs" />
-    <Compile Include="LstGV.cs" />
-    <Compile Include="Nguoi.cs" />
-    <Compile Include="NhanVien.cs" />
+    <Compile Include="All Class Cargo\HangHoa.cs" />
+    <Compile Include="All Class Cargo\NuocGiaiKhat.cs" />
+    <Compile Include="All Class People\GiangVien.cs" />
+    <Compile Include="All Class People\GVCH.cs" />
+    <Compile Include="All Class People\GVTG.cs" />
+    <Compile Include="All Class People\LstGV.cs" />
+    <Compile Include="All Class People\Nguoi.cs" />
+    <Compile Include="All Class People\NhanVien.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SinhVien.cs" />
+    <Compile Include="All Class People\SinhVien.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="ThongTinGV.xml" />
+    <Content Include="All Class People\ThongTinGV.xml" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

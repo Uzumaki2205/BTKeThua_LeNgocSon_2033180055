@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BTKeThua_LeNgocSon_2033180055.All_Class_Cargo;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -31,11 +32,17 @@ namespace BTKeThua_LeNgocSon_2033180055
             //GVTG g2 = new GVTG("s");
             //Console.WriteLine("Tien Vuot Gio = " + g2.TienVuotGio(g));
 
-            LstGV lstGV = new LstGV();
-            lstGV.ReadXML();
-            lstGV.xuatDemGV();
-            Console.WriteLine("SO tiet nhieu nhat = " + lstGV.Tim_GVCH_DayVuotGio_NhieuNhat());
-            
+            //LstGV lstGV = new LstGV();
+            //lstGV.ReadXML();
+            //lstGV.xuatDemGV();
+            //Console.ForegroundColor = ConsoleColor.Green;
+            //Console.WriteLine("\n-----------Giảng viên dạy vượt giờ nhiều nhất------------\n");
+            //lstGV.Tim_GVCH_DayVuotGio_NhieuNhat().xuat();
+
+
+            //---------------B4--------------//
+            NuocGiaiKhat a = new NuocGiaiKhat("H123", "CPU", "s", 2, 12000);
+            a.xuat();
 
             Console.ReadKey();
         }

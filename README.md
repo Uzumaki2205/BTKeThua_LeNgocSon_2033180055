@@ -1,6 +1,7 @@
 ﻿# BÀI TẬP KẾ THỪA
 ## Bài 1. Một người bao gồm các thông tin: họ tên, ngày sinh, giới tính (giới tính là “nam” hoặc “nữ”).
-## Nhân viên của một công ty là một người và có thêm các thuộc tính: mã số nhân viên, lương cơ bản, chức vụ và hệ số chức vụ. Hệ thống quản lý bao gồm các yêu cầu chi tiết như sau:
+## Nhân viên của một công ty là một người và có thêm các thuộc tính: mã số nhân viên, lương cơ bản, chức vụ và hệ số chức vụ. 
+### Hệ thống quản lý bao gồm các yêu cầu chi tiết như sau:
 ### a. Lớp người:
 - Xây dựng lớp với các thuộc tính trên.
 - Xây dựng phương thức khởi tạo mặc định. Giới tính mặc định là “nam”
@@ -34,7 +35,7 @@ tiền = số ca, ngược lại số ca vượt sẽ được tính gấp 2.
 - Xuất thông tin nhân viên có lương cao nhất/thấp nhất
 ## Bài 2. Một người bao gồm các thông tin: họ tên, ngày sinh, giới tính (giới tính là “nam” hoặc “nữ”). 
 ## Sinh viên của một trường là một người và có thêm các thuộc tính: mã số sinh viên, hệ đào tạo, tổng số tín chỉ. 
-## Hệ thống quản lý bao gồm các yêu cầu chi tiết như sau:
+### Hệ thống quản lý bao gồm các yêu cầu chi tiết như sau:
 ### a. Lớp người:
 - Xây dựng lớp với các thuộc tính trên.
 - Xây dựng phương thức khởi tạo mặc định. Giới tính mặc định là “nam”
@@ -56,7 +57,7 @@ tổng học phí = tổng số tín chỉ * học phí tín chỉ. Trong đó, 
 - Nếu hệ đào tạo là “cao đẳng nghề” thì học phí tín chỉ = 120.000
 ## Bài 3. Một người bao gồm các thông tin: họ tên, ngày sinh, giới tính (giới tính là “nam” hoặc “nữ”). 
 ## Giảng viên của một trường là một người và có thêm các thuộc tính: mã số, lương cơ bản, hệ số, chức vụ. 
-## Hệ thống quản lý bao gồm các yêu cầu chi tiết như sau:
+### Hệ thống quản lý bao gồm các yêu cầu chi tiết như sau:
 ### a. Lớp người:
 - Xây dựng lớp với các thuộc tính trên.
 - Xây dựng phương thức khởi tạo mặc định. Giới tính mặc định là “nam”- Xây dựng phương thức khởi tạo có tham số, nếu tham số giới tính truyền vào
@@ -75,16 +76,14 @@ hệ số + phụ cấp chức vụ (PCCV). Trong đó, phụ cấp chức vụ 
 - Nếu chức vụ là “trưởng khoa” thì PCCV = 5 * lương cơ bản
 - Nếu chức vụ là “phó khoa” thì PCCV = 4 * lương cơ bản
 - Giảng viên không có PCCV (hay PCCV = 0)
-### c. Giảng viên gồm có 2 dạng: giảng viên cơ hữu và giảng viên thỉnh giảng. Cách
-tính vượt giờ của mỗi loại GV như sau:
-- Giảng viên cơ hữu: tùy theo trình độ và tình trạng đang đi học hoặc không đi học
-nâng cao mà có số tiết dạy chuẩn trong 1 năm theo qui định sau:
+### c. Giảng viên gồm có 2 dạng: giảng viên cơ hữu và giảng viên thỉnh giảng. Cách tính vượt giờ của mỗi loại GV như sau:
+- Giảng viên cơ hữu: tùy theo trình độ và tình trạng đang đi học hoặc không đi học nâng cao mà có số tiết dạy chuẩn trong 1 năm theo qui định sau:
 + GV trình độ cử nhân và không đi học: 300 tiết và hệ số dạy 1.0
 + GV trình độ cử nhân và đang học Thạc sĩ: 210 tiết và hệ số dạy 1.0
 + GV trình độ thạc sĩ và không đi học: 300 tiết và hệ số dạy 1.5
 + GV trình độ thạc sĩ và đang đi học tiến sĩ: 150 tiết và hệ số dạy là 1.5
 + GV trình độ tiến sĩ: 300 và hệ số dạy là 2.5
-- Tính tiền vượt giờ: (tổng số giờ dạy-số tiết dạy chuẩn)*hệ số dạy*60
+- Tính tiền vượt giờ: (tổng số giờ dạy - số tiết dạy chuẩn) * hệ số dạy * 60
 - Giảng viên thỉnh giảng được tính tiền vượt giờ như sau:
 + GV có trình độ cử nhân: số tiết dạy * 60
 + GV có trình độ thạc sỹ: số tiết dạy * 100
@@ -98,7 +97,7 @@ nâng cao mà có số tiết dạy chuẩn trong 1 năm theo qui định sau:
 - Đếm số giảng viên có trình độ cử nhân/thạc sỹ/tiến sĩ.
 ## Bài 4. Một hàng hóa bao gồm các thông tin: mã hàng và tên hàng. 
 ## Nước giải khát là một hàng hóa và có thêm các thuộc tính: đơn vị tính, số lượng, đơn giá. 
-## Hệ thống quản lý bao gồm các yêu cầu chi tiết như sau:
+### Hệ thống quản lý bao gồm các yêu cầu chi tiết như sau:
 ### a. Lớp hàng hóa:
 - Xây dựng lớp với các thuộc tính trên.
 - Xây dựng phương thức khởi tạo mặc định, mã hàng và tên hàng đều rỗng
@@ -116,7 +115,7 @@ Nếu đơn vị tính không thuộc 1 trong 4 tham số trên thì gán đơn 
 - DVT = “lon” -> thành tiền = số lượng * đơn giá /24
 ## Bài 5. Một hàng hóa bao gồm các thông tin: mã hàng và tên hàng. 
 ## Dầu gội là một hàng hóa và có thêm các thuộc tính: đơn vị tính, số lượng, đơn giá, xuất xứ. 
-## Hệ thống quản lý bao gồm các yêu cầu chi tiết như sau:
+### Hệ thống quản lý bao gồm các yêu cầu chi tiết như sau:
 ### e. Lớp hàng hóa:
 - Xây dựng lớp với các thuộc tính trên.
 - Xây dựng phương thức khởi tạo mặc định, mã hàng và tên hàng đều rỗng

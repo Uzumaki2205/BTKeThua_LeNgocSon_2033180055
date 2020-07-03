@@ -85,12 +85,27 @@ namespace BTKeThua_LeNgocSon_2033180055
             Console.WriteLine("Giáo viên cơ hữu: " + demch);
         }
 
-        public void Tim_GVCH_DayVuotGio_NhieuNhat()
+        public GiangVien Tim_GVCH_DayVuotGio_NhieuNhat()
         {
-            if (type == "giảng viên cơ hữu")
+            GiangVien b = new GiangVien();
+            int max = 0;
+            XmlDocument reader = new XmlDocument();
+            reader.Load("D:\\CODE\\C#\\C# Tutorial\\BTKeThua_LeNgocSon_2033180055\\BTKeThua_LeNgocSon_2033180055\\ThongTinGV.xml");
+            foreach (XmlNode node in reader.DocumentElement.ChildNodes)
             {
+                GiangVien a = new GiangVien();
+                a.Id = node["ID"].InnerText;
 
+                GVCH g = new GVCH();
+                if (node["Type"].InnerText == "giảng viên cơ hữu")
+                {
+                    g.SoGio = int.Parse(node["Hours"].InnerText);
+
+                    if (max <= g.SoGio)
+                        max = g.SoGio;
+                }
             }
+            return b;
         }
     }
 }

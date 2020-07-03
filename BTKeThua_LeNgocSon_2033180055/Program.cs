@@ -34,6 +34,8 @@ namespace BTKeThua_LeNgocSon_2033180055
             LstGV lstGV = new LstGV();
             lstGV.ReadXML();
             lstGV.xuatDemGV();
+            Console.WriteLine("SO tiet nhieu nhat = " + lstGV.Tim_GVCH_DayVuotGio_NhieuNhat());
+            
 
             Console.ReadKey();
         }

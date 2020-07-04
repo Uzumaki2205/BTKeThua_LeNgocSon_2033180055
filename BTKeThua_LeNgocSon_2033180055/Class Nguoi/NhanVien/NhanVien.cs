@@ -11,10 +11,23 @@ namespace BTKeThua_LeNgocSon_2033180055
         string id;
         string chucVu;
         float heSo;
-        static double luongcb;
+        static float luongcb;
 
-        public string Id { get => id; set => id = value; }
-        public string ChucVu { get => chucVu; set => chucVu = value; }
+        public string Id 
+        {
+            get { return id; }
+            set
+            {
+                if (value == string.Empty)
+                    id = "NV001";
+                else id = value;
+            }
+        }
+        public string ChucVu 
+        {
+            get { return chucVu; }
+            set { chucVu = value.ToLower(); }
+        }
         public float HeSo 
         {
             get 
@@ -23,22 +36,21 @@ namespace BTKeThua_LeNgocSon_2033180055
                     heSo = 2.0f; 
                 else if (ChucVu == "trưởng phòng")
                     heSo = 1.5f;
-                else { heSo = 1.0f; }
+                else heSo = 1.0f;
 
                 return heSo;
             }
         }
 
-        public static double Luongcb { get => luongcb; set => luongcb = value; }
+        public static float Luongcb 
+        {
+            get { return luongcb; }
+            set { luongcb = value; }
+        }
 
         static NhanVien()
         {
             Luongcb = 1200;
-        }
-        public NhanVien() : base()
-        {
-            Id = "001";
-            ChucVu = "trưởng phòng";
         }
 
         public NhanVien(string Hoten, DateTime Ngaysinh, string Gioitinh, String Id, String ChucVu) 
@@ -51,14 +63,9 @@ namespace BTKeThua_LeNgocSon_2033180055
             this.ChucVu = ChucVu;
         }
 
-        double Luong() 
+        float Luong() 
         { 
-            return (Gioitinh == "Nữ") ? Luongcb * HeSo * Luongcb + 0.5f : Luongcb * HeSo * Luongcb; 
-        }
-
-        public new void nhap()
-        {
-            base.nhap();
+            return (Gioitinh == "Nữ") ? (Luongcb * HeSo * Luongcb) + (0.5f * Luongcb) : Luongcb * HeSo * Luongcb; 
         }
 
         public new void xuat()

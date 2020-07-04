@@ -22,7 +22,7 @@ namespace BTKeThua_LeNgocSon_2033180055
                 string Lower = value.ToLower();
                 if (Lower != "nam" && Lower != "nữ")
                     gioitinh = "nam";
-                else gioitinh = value;
+                else gioitinh = Lower;
             }
         }
 
@@ -40,14 +40,9 @@ namespace BTKeThua_LeNgocSon_2033180055
             this.Gioitinh = Gioitinh;
         }
 
-        public void nhap()
-        {
-            Hoten = "Le Ngoc Son";
-            Gioitinh = "Nam";
-        }
-
         public void xuat()
         {
+            Console.Write("\n-----------------\n");
             Console.WriteLine("Họ tên = " + hoten);
             Console.WriteLine("Ngày sinh = {0}/{1}/{2}", ngaysinh.Day, ngaysinh.Month, ngaysinh.Year);
             Console.WriteLine("Giới tính = " + gioitinh);

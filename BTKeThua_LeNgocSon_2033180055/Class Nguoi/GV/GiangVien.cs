@@ -11,22 +11,32 @@ namespace BTKeThua_LeNgocSon_2033180055
         string id;
         string chucVu;
         float heSo;
-        static double luongcb;
+        static float luongcb;
 
-        public string Id { get => id; set => id = value; }
+        public string Id 
+        { 
+            get { return id; }
+            set 
+            {
+                if (value == string.Empty)
+                    id = "GV001";
+                else id = value;
+            }
+        }
         public string ChucVu 
         { 
-            get => chucVu; 
+            get { return chucVu; }
             set
             {
-                if (value != "trưởng khoa" && value != "phó khoa" && value != "giảng viên")
+                string Lower = value.ToLower();
+                if (Lower != "trưởng khoa" && Lower != "phó khoa" && Lower != "giảng viên")
                     chucVu = "giảng viên";
-                else chucVu = value;
+                else chucVu = Lower;
             }
         }
         public float HeSo 
-        { 
-            get => heSo; 
+        {
+            get { return heSo; }
             set
             {
                 if (value != 2.34f && value != 2.67f && value != 3.0f && value != 3.3f)
@@ -34,10 +44,14 @@ namespace BTKeThua_LeNgocSon_2033180055
                 else heSo = value;
             }
         }
-        public static double Luongcb { get => luongcb; set => luongcb = value; }
-        public double Luong { get { return Luongcb * heSo + PCCV(); } }
+        public static float Luongcb 
+        { 
+            get { return luongcb; }
+            set { luongcb = value; }
+        }
+        public float Luong { get { return Luongcb * heSo + PCCV(); } }
 
-        double PCCV()
+        float PCCV()
         {
             if (chucVu == "trưởng khoa")
                 return 5 * Luongcb;
@@ -74,7 +88,6 @@ namespace BTKeThua_LeNgocSon_2033180055
 
         public new void xuat()
         {
-            Console.Write("\n------------------\n");
             base.xuat();
             Console.WriteLine("ID = " + id);
             Console.WriteLine("Chức Vụ = " + chucVu);
@@ -82,7 +95,6 @@ namespace BTKeThua_LeNgocSon_2033180055
             Console.WriteLine("Lương cơ bản = " + Luongcb);
             Console.WriteLine("PCCV = " + PCCV());
             Console.WriteLine("Lương = " + Luong);
-            Console.Write("\n------------------\n");
         }
     }
 }

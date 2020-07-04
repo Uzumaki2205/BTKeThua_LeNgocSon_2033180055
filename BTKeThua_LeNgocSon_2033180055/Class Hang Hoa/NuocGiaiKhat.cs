@@ -13,8 +13,8 @@ namespace BTKeThua_LeNgocSon_2033180055.All_Class_Cargo
         float donGia;
 
         public string Dvt 
-        { 
-            get => dvt; 
+        {
+            get { return dvt; }
             set
             {
                 string Lower = value.ToLower();
@@ -24,8 +24,21 @@ namespace BTKeThua_LeNgocSon_2033180055.All_Class_Cargo
             }
         }
 
-        public int SoLuong { get => soLuong; set => soLuong = value; }
-        public float DonGia { get => donGia; set => donGia = value; }
+        public int SoLuong 
+        { 
+            get { return soLuong; }
+            set
+            {
+                if (value < 0)
+                    soLuong = 0;
+                else soLuong = value;
+            }
+        }
+        public float DonGia 
+        {
+            get { return donGia; }
+            set { donGia = value; }
+        }
 
         public NuocGiaiKhat(string Id, string TenHang, string Dvt, int SoLuong, float DonGia)
             : base(Id, TenHang)
@@ -37,16 +50,13 @@ namespace BTKeThua_LeNgocSon_2033180055.All_Class_Cargo
             this.DonGia = DonGia;
         }
 
-        public float Tien 
+        public float Tien() 
         { 
-            get
-            {
-                if (Dvt == "kết" || Dvt == "thùng")
-                    return SoLuong * DonGia;
-                else if (Dvt == "chai")
-                    return SoLuong * DonGia / 20;
-                else return SoLuong * DonGia / 40;
-            }
+            if (Dvt == "kết" || Dvt == "thùng")
+                return SoLuong * DonGia;
+            else if (Dvt == "chai")
+                return SoLuong * DonGia / 20;
+            else return SoLuong * DonGia / 24;
         }
 
         public new void xuat()
@@ -55,7 +65,7 @@ namespace BTKeThua_LeNgocSon_2033180055.All_Class_Cargo
             Console.WriteLine("Đơn vị tính = " + dvt);
             Console.WriteLine("Số luọng = " + soLuong);
             Console.WriteLine("Đơn giá = " + donGia);
-            Console.WriteLine("Tiền = " + Tien);
+            Console.WriteLine("Tiền = " + Tien());
         }
     }
 }

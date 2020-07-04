@@ -42,23 +42,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="All Class Cargo\HangHoa.cs" />
-    <Compile Include="All Class Cargo\NuocGiaiKhat.cs" />
-    <Compile Include="All Class People\GiangVien.cs" />
-    <Compile Include="All Class People\GVCH.cs" />
-    <Compile Include="All Class People\GVTG.cs" />
-    <Compile Include="All Class People\LstGV.cs" />
-    <Compile Include="All Class People\Nguoi.cs" />
-    <Compile Include="All Class People\NhanVien.cs" />
+    <Compile Include="Class Hang Hoa\DauGoi.cs" />
+    <Compile Include="Class Hang Hoa\HangHoa.cs" />
+    <Compile Include="Class Hang Hoa\NuocGiaiKhat.cs" />
+    <Compile Include="Class Nguoi\GV\GiangVien.cs" />
+    <Compile Include="Class Nguoi\GV\GVCH.cs" />
+    <Compile Include="Class Nguoi\GV\GVTG.cs" />
+    <Compile Include="Class Nguoi\GV\LstGV.cs" />
+    <Compile Include="Class Nguoi\Nguoi.cs" />
+    <Compile Include="Class Nguoi\NhanVien\NhanVien.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="All Class People\SinhVien.cs" />
+    <Compile Include="Class Nguoi\SV\SinhVien.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="All Class People\ThongTinGV.xml" />
+    <Content Include="Class Nguoi\GV\ThongTinGV.xml" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

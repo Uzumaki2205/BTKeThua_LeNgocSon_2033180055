@@ -12,19 +12,26 @@ namespace BTKeThua_LeNgocSon_2033180055
         string heDT;
         int tongTC;
 
-        public string Id { get => id; set => id = value; }
+        public string Id 
+        {
+            get { return id; }
+            set 
+            {
+                if (value == string.Empty)
+                    id = "SV001";
+                else id = value;
+            }
+        }
         public string HeDT 
         {
-            get
+            get { return heDT; }
+            set
             {
-                string Lower = heDT.ToLower();
+                string Lower = value.ToLower();
                 if (Lower != "đại học" && Lower != "cao đẳng" && Lower != "cao đẳng nghề")
                     heDT = "đại học";
                 else heDT = Lower;
-
-                return heDT;
             }
-            set { heDT = value; }
         }
         public int TongTC 
         { 
@@ -51,7 +58,7 @@ namespace BTKeThua_LeNgocSon_2033180055
             this.HeDT = HeDT;
         }
 
-        //hàm kiểm tra tiền
+        //kiểm tra học phí
         int ktHP()
         {
             if (HeDT == "đại học")
@@ -61,18 +68,17 @@ namespace BTKeThua_LeNgocSon_2033180055
             else return 120;
         }
 
-        //hàm tính tổng học phí
-        public double TongHP { get{ return TongTC * ktHP(); } }
+        //tính tổng học phí
+        float TongHP() { return TongTC * ktHP(); } 
 
         public new void xuat()
         {
             base.xuat();
-            Console.Write("\n-------------\n");
             Console.WriteLine("ID = " + id);
-            Console.WriteLine("He Dao Tao = " + heDT);
-            Console.WriteLine("Tong TC = " + TongTC);
-            Console.WriteLine("Hoc Phi moi tin chi = " + ktHP());
-            Console.WriteLine("Tong Hoc Phi = " + TongHP);
+            Console.WriteLine("Hệ đào tạo = " + heDT);
+            Console.WriteLine("Tổng tín chỉ = " + TongTC);
+            Console.WriteLine("Học phí mỗi tín chỉ = " + ktHP());
+            Console.WriteLine("TỔng học phí = " + TongHP());
         }
     }
 }

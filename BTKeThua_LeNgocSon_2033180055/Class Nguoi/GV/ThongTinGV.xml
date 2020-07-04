@@ -48,4 +48,20 @@
     <IsGoScholl>không đi học</IsGoScholl>
     <Hours>304</Hours>
   </GV>
+  <GV>
+    <Name>Giảng viên 4</Name>
+    <BirthDay>
+      <Day>10</Day>
+      <Month>10</Month>
+      <Year>1996</Year>
+    </BirthDay>
+    <Sex>Nam</Sex>
+    <ID>00055</ID>
+    <Role>phó khoa</Role>
+    <Figure>3.3</Figure>
+    <Type>giảng viên thỉnh giảng</Type>
+    <Level>thạc sĩ</Level>
+    <IsGoScholl>không đi học</IsGoScholl>
+    <Hours>302</Hours>
+  </GV>
 </DSGV>

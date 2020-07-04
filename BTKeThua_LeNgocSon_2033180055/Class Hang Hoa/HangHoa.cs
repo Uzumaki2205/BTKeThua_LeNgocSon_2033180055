@@ -12,8 +12,8 @@ namespace BTKeThua_LeNgocSon_2033180055.All_Class_Cargo
         string tenHang;
 
         public string Id 
-        { 
-            get => id; 
+        {
+            get { return id; } 
             set
             {
                 if (checkMahang(value) == true)
@@ -24,7 +24,12 @@ namespace BTKeThua_LeNgocSon_2033180055.All_Class_Cargo
         public string TenHang 
         {
             get { return tenHang; }
-            set { tenHang = value; }
+            set 
+            {
+                if (value == string.Empty)
+                    tenHang = "Chưa đặt tên";
+                else tenHang = value;
+            }
         }
 
         public HangHoa()
@@ -51,6 +56,7 @@ namespace BTKeThua_LeNgocSon_2033180055.All_Class_Cargo
             if (s.Length > 5 || s.Length < 5)
             {
                 Console.WriteLine("Chiều dài chuỗi không hợp lệ!!");
+                Console.WriteLine("Default = HH001");
                 return false;
             }
             else

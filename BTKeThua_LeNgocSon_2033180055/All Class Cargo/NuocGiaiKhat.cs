@@ -37,12 +37,25 @@ namespace BTKeThua_LeNgocSon_2033180055.All_Class_Cargo
             this.DonGia = DonGia;
         }
 
+        public float Tien 
+        { 
+            get
+            {
+                if (Dvt == "kết" || Dvt == "thùng")
+                    return SoLuong * DonGia;
+                else if (Dvt == "chai")
+                    return SoLuong * DonGia / 20;
+                else return SoLuong * DonGia / 40;
+            }
+        }
+
         public new void xuat()
         {
             base.xuat();
             Console.WriteLine("Đơn vị tính = " + dvt);
             Console.WriteLine("Số luọng = " + soLuong);
             Console.WriteLine("Đơn giá = " + donGia);
+            Console.WriteLine("Tiền = " + Tien);
         }
     }
 }

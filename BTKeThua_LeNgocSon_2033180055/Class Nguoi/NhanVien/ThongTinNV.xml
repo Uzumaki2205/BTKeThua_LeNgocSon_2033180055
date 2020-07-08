@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ListStaff>
+  <Staff>
+    <Name>Nguyễn Thị Kiên</Name>
+    <Birthday>
+      <Day>10</Day>
+      <Month>2</Month>
+      <Year>1990</Year>
+    </Birthday>
+    <Sex>Nam</Sex>
+    <ID>1238</ID>
+    <Role>trưởng phòng</Role>
+    <Type>Nhân viên hành chính</Type>
+    <Num_Salary>2</Num_Salary>
+    <Num_Day>20</Num_Day>
+  </Staff>
+  <Staff>
+    <Name>Lê Ngọc Sơn</Name>
+    <Birthday>
+      <Day>10</Day>
+      <Month>2</Month>
+      <Year>1990</Year>
+    </Birthday>
+    <Sex>Nam</Sex>
+    <ID>1238</ID>
+    <Role>trưởng phòng</Role>
+    <Type>Nhân viên theo ca</Type>
+    <Num_Shift>5</Num_Shift>
+  </Staff>
+  <Staff>
+    <Name>Lê Ngọc Sơn</Name>
+    <Birthday>
+      <Day>10</Day>
+      <Month>2</Month>
+      <Year>1990</Year>
+    </Birthday>
+    <Sex>Nam</Sex>
+    <ID>1238</ID>
+    <Role>trưởng phòng</Role>
+    <Type>Nhân viên thời vụ</Type>
+    <Num_Product>5</Num_Product>
+  </Staff>
+</ListStaff> 

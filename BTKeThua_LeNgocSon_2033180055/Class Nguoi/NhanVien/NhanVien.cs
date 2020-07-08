@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BTKeThua_LeNgocSon_2033180055
 {
-    class NhanVien : Nguoi
+    abstract class NhanVien : Nguoi
     {
         string id;
         string chucVu;
@@ -32,9 +32,10 @@ namespace BTKeThua_LeNgocSon_2033180055
         {
             get 
             {
-                if (ChucVu == "giám đốc")
+                string Lower = ChucVu.ToLower();
+                if (Lower == "giám đốc")
                     heSo = 2.0f; 
-                else if (ChucVu == "trưởng phòng")
+                else if (Lower == "trưởng phòng")
                     heSo = 1.5f;
                 else heSo = 1.0f;
 
@@ -53,6 +54,12 @@ namespace BTKeThua_LeNgocSon_2033180055
             Luongcb = 1200;
         }
 
+        public NhanVien() : base()
+        {
+            Id = "";
+            ChucVu = "";
+        }
+
         public NhanVien(string Hoten, DateTime Ngaysinh, string Gioitinh, String Id, String ChucVu) 
             : base(Hoten, Ngaysinh, Gioitinh)
         {
@@ -62,22 +69,30 @@ namespace BTKeThua_LeNgocSon_2033180055
             this.Id = Id;
             this.ChucVu = ChucVu;
         }
+        public NhanVien(NhanVien a)
+        {
+            this.Hoten = a.Hoten;
+            this.Ngaysinh = a.Ngaysinh;
+            this.Gioitinh = a.Gioitinh;
+            this.Id = a.Id;
+            this.ChucVu = a.ChucVu;
+        }
 
         float Luong() 
         { 
             return (Gioitinh == "Nữ") ? (Luongcb * HeSo * Luongcb) + (0.5f * Luongcb) : Luongcb * HeSo * Luongcb; 
         }
 
-        public new void xuat()
+        public abstract float LuongNV();
+
+        public override void xuat()
         {
-            Console.Write("\n--------------\n");
             base.xuat();
             Console.WriteLine("ID = " + id);
-            Console.WriteLine("Chuc Vu = " + chucVu);
-            Console.WriteLine("He So = {0}", HeSo);
-            Console.WriteLine("Luong co ban = " + Luongcb);
-            Console.WriteLine("Luong = " + Luong());
+            Console.WriteLine("Chức vụ = " + chucVu);
+            Console.WriteLine("Hệ số chức vụ = " + HeSo);
+            Console.WriteLine("Lương cơ bản = " + Luongcb);
+            //Console.WriteLine("Lương = " + Luong());
         }
-
     }
 }

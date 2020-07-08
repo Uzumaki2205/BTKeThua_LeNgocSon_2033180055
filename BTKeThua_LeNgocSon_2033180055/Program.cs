@@ -14,8 +14,13 @@ namespace BTKeThua_LeNgocSon_2033180055
             Console.OutputEncoding = Encoding.UTF8;
 
             //---------------B1--------------//
-            //NhanVien a = new NhanVien("Lê Ngọc Sơn", new DateTime(2000, 12, 10), "nAM", "nv123", "NHÂN VIÊN");
+            //NVHC a = new NVHC("Lê Ngọc Sơn", new DateTime(2000, 12, 10), "naM", "nv123", "NHÂN VIÊN", 2, 17);
+            //NVTC a = new NVTC("Lê Ngọc Sơn", new DateTime(2000, 12, 10), "naM", "nv123", "NHÂN VIÊN", 5);
+            //NVTV a = new NVTV("Lê Ngọc Sơn", new DateTime(2000, 12, 10), "naM", "nv123", "NHÂN VIÊN", 12);
             //a.xuat();
+            ListNV a = new ListNV();
+            a.ReadXML();
+
 
             //---------------B2--------------//
             //SinhVien s = new SinhVien("ND", new DateTime(2012, 11, 23), "Nữ", "2033180055", "s");

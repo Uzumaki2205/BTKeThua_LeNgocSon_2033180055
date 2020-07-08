@@ -33,17 +33,22 @@ namespace BTKeThua_LeNgocSon_2033180055
             //    "Nam", "12312", "phó khoa", 3.3f, "thạc sĩ", "không đi học", 301);
             //g2.xuat();
 
-            LstGV lstGV = new LstGV();
-            lstGV.ReadXML();
+            //LstGV a = new LstGV();
+            //a.ReadXML();
+            //Console.ForegroundColor = ConsoleColor.Green;
 
-            lstGV.xuatDemGV();
-            Console.ForegroundColor = ConsoleColor.Green;
-            Console.WriteLine("\nGiảng viên dạy vượt giờ nhiều nhất");
-            lstGV.Tim_GVCH_DayVuotGio_NhieuNhat().xuat();
+            //Console.WriteLine("\nTổng tiền vượt giờ GVCH = " + a.TongTienVuotGio_GVCH());
+            //Console.WriteLine("\nTổng tiền vượt giờ GVTG = " + a.TongTienVuotGio_GVTG());
+            //Console.WriteLine("\n------------------GVCH tiền nhiều nhất--------------------\n");
+            //a.Tim_GVCH_DayVuotGio_NhieuNhat().xuat();
 
-            Console.ForegroundColor = ConsoleColor.Yellow;
-            Console.WriteLine("\nTổng tiền vượt giờ (GVCH): " + lstGV.TongTienVuotGio_GVCH());
-            Console.WriteLine("\nTổng tiền vượt giờ (GVTG): " + lstGV.TongTienVuotGio_GVTG());
+            //Console.WriteLine("\n------------------Danh sách giảng viên cơ hữu dạy thiếu giờ quy định--------------------\n");
+            //a.Tim_GVCH_DayThieuGio();
+            //Console.WriteLine("\n------------------Đếm mỗi loại chức vụ của giảng viên--------------------\n");
+            //a.DemGV();
+
+            //Console.WriteLine("\n------------------Đếm giảng viên mỗi loại--------------------\n");
+            //a.xuatDemGV();
 
 
             //---------------B4--------------//

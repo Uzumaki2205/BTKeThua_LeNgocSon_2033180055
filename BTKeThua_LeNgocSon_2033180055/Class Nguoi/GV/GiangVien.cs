@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BTKeThua_LeNgocSon_2033180055
 {
-    class GiangVien : Nguoi
+    abstract class GiangVien : Nguoi
     {
         string id;
         string chucVu;
@@ -51,6 +51,8 @@ namespace BTKeThua_LeNgocSon_2033180055
         }
         public float Luong { get { return Luongcb * heSo + PCCV(); } }
 
+        public abstract float TienVuotGio();
+
         float PCCV()
         {
             if (chucVu == "trưởng khoa")
@@ -86,7 +88,17 @@ namespace BTKeThua_LeNgocSon_2033180055
             this.HeSo = HeSo;
         }
 
-        public new void xuat()
+        public GiangVien(GiangVien a)
+        {
+            this.Hoten = a.Hoten;
+            this.Ngaysinh = a.Ngaysinh;
+            this.Gioitinh = a.Gioitinh;
+            this.Id = a.Id;
+            this.ChucVu = a.ChucVu;
+            this.HeSo = a.HeSo;
+        }
+
+        public override void xuat()
         {
             base.xuat();
             Console.WriteLine("ID = " + id);

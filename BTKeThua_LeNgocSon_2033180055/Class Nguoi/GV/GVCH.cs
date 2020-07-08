@@ -98,15 +98,22 @@ namespace BTKeThua_LeNgocSon_2033180055
             this.SoGio = SoGio;
         }
 
-        public GVCH (GiangVien a)
+        public GVCH(GVCH a) : base(a)
         {
-            this.Hoten = a.Hoten;
-            this.Ngaysinh = a.Ngaysinh;
-            this.Gioitinh = a.Gioitinh;
-            this.Id = a.Id;
-            this.ChucVu = a.ChucVu;
-            this.HeSo = a.HeSo;
+            this.TrinhDo = a.TrinhDo;
+            this.DiHoc = a.DiHoc;
+            this.SoGio = a.SoGio;
         }
+
+        //public GVCH (GiangVien a)
+        //{
+        //    this.Hoten = a.Hoten;
+        //    this.Ngaysinh = a.Ngaysinh;
+        //    this.Gioitinh = a.Gioitinh;
+        //    this.Id = a.Id;
+        //    this.ChucVu = a.ChucVu;
+        //    this.HeSo = a.HeSo;
+        //}
 
         //test List in readXAML
         //public GVCH(GVCH a)
@@ -123,23 +130,31 @@ namespace BTKeThua_LeNgocSon_2033180055
             
         //}
 
-        public double TienVuotGio()
-        {
-            return (soGio - SoTiet) * HeSo * 60;
-        }
+        //public void xuat1p()
+        //{
+        //    base.xuat();
+        //    Console.WriteLine("Trình độ = " + trinhDo);
+        //    Console.WriteLine("Đi học = " + diHoc);
+        //    Console.WriteLine("Số giờ = " + soGio);
+        //}
 
-        public void xuat1p()
+        public override void xuat()
         {
             base.xuat();
             Console.WriteLine("Trình độ = " + trinhDo);
             Console.WriteLine("Đi học = " + diHoc);
             Console.WriteLine("Số giờ = " + soGio);
+            Console.WriteLine("Tiền vượt giờ = " + TienVuotGio());
         }
 
-        public new void xuat()
+        public override float TienVuotGio()
         {
-            xuat1p();
-            Console.WriteLine("Tiền vượt giờ = " + TienVuotGio());
+            float tien = (soGio - SoTiet) * HeSo * 60;
+            if (tien < 0)
+            {
+                tien = 0;
+            }
+            return tien;
         }
     }
 }

@@ -40,7 +40,7 @@ namespace BTKeThua_LeNgocSon_2033180055
             this.Gioitinh = Gioitinh;
         }
 
-        public void xuat()
+        public virtual void xuat()
         {
             Console.Write("\n-----------------\n");
             Console.WriteLine("Họ tên = " + hoten);

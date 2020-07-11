@@ -148,18 +148,18 @@ Cần tính lại thành tiền của mỗi loại vì các tính thuế mỗi l
 - Đối với nước không có gas: 2%
 ## Bài 5. Thiết kế và xây dựng lớp cho chương trình tính tiền phòng hàng tháng cho một cơ sở cho thuê phòng trọ. 
 ## Biết rằng mỗi phòng đều có thông tin sau: Mã số phòng, số người ở, số điện và số nước. 
-### Tiền phòng = 1500 + số điện *3 + số nước *10.
+### Tiền phòng = 1500 + số điện x 3 + số nước x 10.
 Cơ sở chia phòng ra làm 2 loại khác nhau:
 - Phòng loại A: Có thêm thông tin về số lần người thân thăm và ở lại qua đêm (Nguoithan) 
-Tiền phòng được tính như sau:
-### Tiền phòng =1400 + 2*số điện + 8*số nước + 50*Nguoithan
+### Tiền phòng được tính như sau:
+### Tiền phòng = 1400 + 2 x số điện + 8 '*' số nước + 50 x Nguoithan
 - Phòng loại B: Có thêm thông tin khối lượng giặt ủi (giatui), và số máy sử dụng internet (somay). 
-Tiền phòng được tính như sau:
-### Tiền phòng =2000+2*số điện + 8*số nước +giatui*5+ somay*100
+###Tiền phòng được tính như sau:
+### Tiền phòng =2000+2 x số điện + 8 x số nước + giatui x 5 + somay x 100
 ## Bài 6. Cục quản lý đường bộ cần quản lý các phương tiện giao thông. 
 ## Mỗi phương tiện giao thông chứa các thông tin: biển số, tên xe, giá trị, thuế trước bạ. 
-### Biết rằng thuế trước bạ = 10% * giá trị.
+### Biết rằng thuế trước bạ = 10% x giá trị.
 Họ quản lý 2 loại xe chính:
-- Xe gắn máy: có thêm thông tin phân khối, và thuế trước bạ = 15%*giá trị + phân khối * 2%.
-- Xe ô tô: có thêm thông tin số chỗ ngồi, và thuế trước bạ = 20%* giá trị + số chỗ ngồi * 10%.
-Hãy xây dựng các lớp để quản lý thông tin và việc tính thuế trước bạ cho các phương tiện trên.
+- Xe gắn máy: có thêm thông tin phân khối, và thuế trước bạ = 15%xgiá trị + phân khối x 2%.
+- Xe ô tô: có thêm thông tin số chỗ ngồi, và thuế trước bạ = 20%x giá trị + số chỗ ngồi x 10%.
+### Hãy xây dựng các lớp để quản lý thông tin và việc tính thuế trước bạ cho các phương tiện trên.

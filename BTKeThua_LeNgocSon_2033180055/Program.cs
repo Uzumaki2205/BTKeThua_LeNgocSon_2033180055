@@ -18,8 +18,9 @@ namespace BTKeThua_LeNgocSon_2033180055
             //NVTC a = new NVTC("Lê Ngọc Sơn", new DateTime(2000, 12, 10), "naM", "nv123", "NHÂN VIÊN", 5);
             //NVTV a = new NVTV("Lê Ngọc Sơn", new DateTime(2000, 12, 10), "naM", "nv123", "NHÂN VIÊN", 12);
             //a.xuat();
-            ListNV a = new ListNV();
-            a.ReadXML();
+
+            //ListNV a = new ListNV();
+            //a.ReadXML();
 
             //a.DemNV();
             //a.Xuat_NVHC_HeSo_1();
@@ -68,6 +69,13 @@ namespace BTKeThua_LeNgocSon_2033180055
             //---------------B5--------------//
             //DauGoi d = new DauGoi("213", "Clear", "chai", 4, 45000, "nước ngoài");
             //d.xuat();
+
+            //NuocGiaiKhat n = new NuocGiaiKhat("3123", "Sting", "chai", 5, 40000);
+            //n.xuat();
+            NuocGiaiKhat cg = new HH_CoGas("123", "C", "chai", 4, 12000);
+            cg.xuat();
+            NuocGiaiKhat kg = new HH_KhongGas("123", "C", "chai", 4, 12000);
+            kg.xuat();
 
             Console.ReadKey();
         }

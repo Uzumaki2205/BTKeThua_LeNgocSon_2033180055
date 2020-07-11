@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BTKeThua_LeNgocSon_2033180055.All_Class_Cargo
 {
-    class HangHoa
+    abstract class HangHoa
     {
         string id;
         string tenHang;
@@ -16,9 +16,9 @@ namespace BTKeThua_LeNgocSon_2033180055.All_Class_Cargo
             get { return id; } 
             set
             {
-                if (checkMahang(value) == true)
-                    id = value;
-                else id = "HH001"; 
+                if (checkMahang(value) == true) 
+                    id = value; 
+                else id = "HH001";   
             }
         }
         public string TenHang 
@@ -32,6 +32,7 @@ namespace BTKeThua_LeNgocSon_2033180055.All_Class_Cargo
             }
         }
 
+        #region Constructor
         public HangHoa()
         {
             Id = "";
@@ -43,20 +44,19 @@ namespace BTKeThua_LeNgocSon_2033180055.All_Class_Cargo
             this.Id = Id;
             this.TenHang = TenHang;
         }
+        #endregion
 
-        public void xuat()
+        public virtual void xuat()
         {
             Console.Write("\n---------------\n");
             Console.WriteLine("ID = " + id);
             Console.WriteLine("Tên hàng = " + tenHang);
         }
 
-        public bool checkMahang(string s)
+        bool checkMahang(string s)
         {
             if (s.Length > 5 || s.Length < 5)
             {
-                Console.WriteLine("Chiều dài chuỗi không hợp lệ!!");
-                Console.WriteLine("Default = HH001");
                 return false;
             }
             else
@@ -76,5 +76,7 @@ namespace BTKeThua_LeNgocSon_2033180055.All_Class_Cargo
                 else return false;  
             }
         }
+
+        public abstract double ThanhTien();
     }
 }

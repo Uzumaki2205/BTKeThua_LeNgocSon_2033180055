@@ -68,21 +68,21 @@ namespace BTKeThua_LeNgocSon_2033180055.All_Class_Cargo
             else return soLuong * donGia / 50;
         }
 
-        float Tien()
+        public override double ThanhTien()
         {
             if (xuatXu == "trong nước")
                 return checkTien();
             else return checkTien() + 0.5f * checkTien();
         }
 
-        public new void xuat()
+        public override void xuat()
         {
             base.xuat();
             Console.WriteLine("Đơn vị tính = " + dvt);
             Console.WriteLine("Số Luọng = " + soLuong);
             Console.WriteLine("Đơn giá = " + donGia);
             Console.WriteLine("Xuất xứ = " + xuatXu);
-            Console.WriteLine("Tiền = " + Tien());
+            Console.WriteLine("Tiền = " + ThanhTien());
         }
     }
 }

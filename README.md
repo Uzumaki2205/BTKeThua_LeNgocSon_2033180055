@@ -141,7 +141,7 @@ hệ số + phụ cấp chức vụ (PCCV). Trong đó, phụ cấp chức vụ 
 - Xây dựng phương thức thành tiền dựa vào đơn vị tính (DVT) như sau:
 - DVT = “kết” hoặc “thùng” -> thành tiền = số lượng * đơn giá
 - DVT = “chai” -> thành tiền = số lượng * đơn giá / 20
-- DVT = “lon” -> thành tiền = số lượng * đơn giá /24
+- DVT = “lon” -> thành tiền = số lượng * đơn giá / 24
 ### h. Nước giải khát chia làm 2 loại: nước có gas và nước không có gas. 
 Cần tính lại thành tiền của mỗi loại vì các tính thuế mỗi loại khác nhau:
 - Đối với nước có gas: 7%
@@ -150,16 +150,16 @@ Cần tính lại thành tiền của mỗi loại vì các tính thuế mỗi l
 ## Biết rằng mỗi phòng đều có thông tin sau: Mã số phòng, số người ở, số điện và số nước. 
 ### Tiền phòng = 1500 + số điện x 3 + số nước x 10.
 Cơ sở chia phòng ra làm 2 loại khác nhau:
-- Phòng loại A: Có thêm thông tin về số lần người thân thăm và ở lại qua đêm (Nguoithan) 
+- Phòng loại A: Có thêm thông tin về số lần người thân thăm và ở lại qua đêm (Nguoithan)
 ### Tiền phòng được tính như sau:
-### Tiền phòng = 1400 + 2 x số điện + 8 '*' số nước + 50 x Nguoithan
+### Tiền phòng = 1400 + 2 '*' số điện + 8 '*' số nước + 50 '*' Nguoithan
 - Phòng loại B: Có thêm thông tin khối lượng giặt ủi (giatui), và số máy sử dụng internet (somay). 
 ###Tiền phòng được tính như sau:
-### Tiền phòng =2000+2 x số điện + 8 x số nước + giatui x 5 + somay x 100
+### Tiền phòng = 2000 + 2 '*' số điện + 8 '*' số nước + giatui '*' 5 + somay '*' 100
 ## Bài 6. Cục quản lý đường bộ cần quản lý các phương tiện giao thông. 
 ## Mỗi phương tiện giao thông chứa các thông tin: biển số, tên xe, giá trị, thuế trước bạ. 
-### Biết rằng thuế trước bạ = 10% x giá trị.
+### Biết rằng thuế trước bạ = 10% '*' giá trị.
 Họ quản lý 2 loại xe chính:
-- Xe gắn máy: có thêm thông tin phân khối, và thuế trước bạ = 15%xgiá trị + phân khối x 2%.
-- Xe ô tô: có thêm thông tin số chỗ ngồi, và thuế trước bạ = 20%x giá trị + số chỗ ngồi x 10%.
+- Xe gắn máy: có thêm thông tin phân khối, và thuế trước bạ = 15% * giá trị + phân khối * 2%.
+- Xe ô tô: có thêm thông tin số chỗ ngồi, và thuế trước bạ = 20% * giá trị + số chỗ ngồi * 10%.
 ### Hãy xây dựng các lớp để quản lý thông tin và việc tính thuế trước bạ cho các phương tiện trên.

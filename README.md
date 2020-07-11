@@ -152,7 +152,7 @@ Cần tính lại thành tiền của mỗi loại vì các tính thuế mỗi l
 Cơ sở chia phòng ra làm 2 loại khác nhau:
 - Phòng loại A: Có thêm thông tin về số lần người thân thăm và ở lại qua đêm (Nguoithan)
 ### Tiền phòng được tính như sau:
-### Tiền phòng = 1400 + 2 '*' số điện + 8 '*' số nước + 50 '*' Nguoithan
+### Tiền phòng = 1400 + 2 * số điện + 8 '*' số nước + 50 '*' Nguoithan
 - Phòng loại B: Có thêm thông tin khối lượng giặt ủi (giatui), và số máy sử dụng internet (somay). 
 ###Tiền phòng được tính như sau:
 ### Tiền phòng = 2000 + 2 '*' số điện + 8 '*' số nước + giatui '*' 5 + somay '*' 100

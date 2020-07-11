@@ -49,6 +49,7 @@ namespace BTKeThua_LeNgocSon_2033180055
             set { luongcb = value; }
         }
 
+        #region Constructor
         static NhanVien()
         {
             Luongcb = 1200;
@@ -71,12 +72,13 @@ namespace BTKeThua_LeNgocSon_2033180055
         }
         public NhanVien(NhanVien a)
         {
-            this.Hoten = a.Hoten;
-            this.Ngaysinh = a.Ngaysinh;
-            this.Gioitinh = a.Gioitinh;
-            this.Id = a.Id;
-            this.ChucVu = a.ChucVu;
+            Hoten = a.Hoten;
+            Ngaysinh = a.Ngaysinh;
+            Gioitinh = a.Gioitinh;
+            Id = a.Id;
+            ChucVu = a.ChucVu;
         }
+        #endregion
 
         float Luong() 
         { 

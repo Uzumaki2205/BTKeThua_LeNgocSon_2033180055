@@ -12,7 +12,7 @@
     <Role>trưởng phòng</Role>
     <Type>Nhân viên hành chính</Type>
     <Num_Salary>2</Num_Salary>
-    <Num_Day>20</Num_Day>
+    <Num_Day>26</Num_Day>
   </Staff>
   <Staff>
     <Name>Lê Ngọc Sơn</Name>
@@ -28,16 +28,43 @@
     <Num_Shift>5</Num_Shift>
   </Staff>
   <Staff>
-    <Name>Lê Ngọc Sơn</Name>
+    <Name>Nhân Viên test</Name>
     <Birthday>
-      <Day>10</Day>
-      <Month>2</Month>
-      <Year>1990</Year>
+      <Day>16</Day>
+      <Month>5</Month>
+      <Year>1997</Year>
     </Birthday>
-    <Sex>Nam</Sex>
-    <ID>1238</ID>
-    <Role>trưởng phòng</Role>
+    <Sex>Nữ</Sex>
+    <ID>4568</ID>
+    <Role>phó phòng</Role>
     <Type>Nhân viên thời vụ</Type>
     <Num_Product>5</Num_Product>
+  </Staff>
+  <Staff>
+    <Name>Nhân Viên test2</Name>
+    <Birthday>
+      <Day>16</Day>
+      <Month>5</Month>
+      <Year>1997</Year>
+    </Birthday>
+    <Sex>Nữ</Sex>
+    <ID>4568</ID>
+    <Role>phó phòng</Role>
+    <Type>Nhân viên thời vụ</Type>
+    <Num_Product>5</Num_Product>
+  </Staff>
+  <Staff>
+    <Name>Test Max Luong</Name>
+    <Birthday>
+      <Day>16</Day>
+      <Month>7</Month>
+      <Year>2000</Year>
+    </Birthday>
+    <Sex>Nam</Sex>
+    <ID>4657</ID>
+    <Role>trưởng phòng</Role>
+    <Type>Nhân viên hành chính</Type>
+    <Num_Salary>8</Num_Salary>
+    <Num_Day>30</Num_Day>
   </Staff>
 </ListStaff> 

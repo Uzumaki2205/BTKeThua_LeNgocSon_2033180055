@@ -21,6 +21,11 @@ namespace BTKeThua_LeNgocSon_2033180055
             ListNV a = new ListNV();
             a.ReadXML();
 
+            //a.DemNV();
+            //a.Xuat_NVHC_HeSo_1();
+            //a.Xuat_Luong_Max().xuat();
+            //a.Xuat_Luong_Min().xuat();
+
 
             //---------------B2--------------//
             //SinhVien s = new SinhVien("ND", new DateTime(2012, 11, 23), "Nữ", "2033180055", "s");

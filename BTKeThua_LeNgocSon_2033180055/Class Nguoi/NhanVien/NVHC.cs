@@ -18,21 +18,23 @@ namespace BTKeThua_LeNgocSon_2033180055
 
         float TinhHSTD()
         {
-            if (soNgay > 25)
+            if (SoNgay > 25)
                 heSoTD = 1.0f;
-            else if (soNgay > 20)
+            else if (SoNgay > 20)
                 heSoTD = 0.75f;
-            else if (soNgay > 15)
+            else if (SoNgay > 15)
                 heSoTD = 0.5f;
             else heSoTD = 0;
 
             return heSoTD;
         }
 
+        #region Constructor
         public NVHC() : base()
         {
             HeSoLuong = 0;
             SoNgay = 1;
+            HeSoTD = TinhHSTD();
         }
         public NVHC(string Hoten, DateTime Ngaysinh, string Gioitinh, String Id, String ChucVu, float HeSoLuong, int SoNgay)
             : base(Hoten, Ngaysinh, Gioitinh, Id, ChucVu)
@@ -42,25 +44,23 @@ namespace BTKeThua_LeNgocSon_2033180055
             HeSoTD = TinhHSTD();
         }
 
-        public NVHC (NVHC a) : base(a)
+        public NVHC(NVHC a) : base(a)
         {
-            this.HeSoLuong = a.HeSoLuong;
-            this.SoNgay = a.SoNgay;
-            this.HeSoTD = TinhHSTD();
+            HeSoLuong = a.HeSoLuong;
+            SoNgay = a.SoNgay;
+            HeSoTD = TinhHSTD();
         }
+        #endregion
 
-        public override float LuongNV()
-        {
-            return 1000 + heSoLuong * HeSoTD * 1150;
-        }
+        public override float LuongNV() { return 1000 + heSoLuong * HeSoTD * 1150; }
 
         public override void xuat()
         {
-            Console.WriteLine("\n---------------Nhân Viên Hành Chính---------------\n");
+            //Console.WriteLine("\n---------------Nhân Viên Hành Chính---------------\n");
             base.xuat();
             Console.WriteLine("Hệ số lương = " + heSoLuong);
             Console.WriteLine("Số ngày làm = " + soNgay);
-            Console.WriteLine("Hệ số thi đua = " + HeSoTD);
+            Console.WriteLine("Hệ số thi đua = " + heSoTD);
             Console.WriteLine("Lương  = " + LuongNV());
         }
     }

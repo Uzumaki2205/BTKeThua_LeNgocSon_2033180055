@@ -12,10 +12,12 @@ namespace BTKeThua_LeNgocSon_2033180055
 
         public int SoCa { get => soCa; set => soCa = value; }
 
+        #region Constructor
         public NVTC() : base()
         {
             soCa = 0;
         }
+
         public NVTC(string Hoten, DateTime Ngaysinh, string Gioitinh, String Id, String ChucVu, int SoCa)
             : base (Hoten, Ngaysinh, Gioitinh, Id, ChucVu)
         {
@@ -24,8 +26,14 @@ namespace BTKeThua_LeNgocSon_2033180055
 
         public NVTC(NVTC a) : base(a)
         {
-            this.SoCa = SoCa;
+            SoCa = a.SoCa;
         }
+
+        public NVTC (NhanVien a) : base(a)
+        {
+            SoCa = 1;
+        }
+        #endregion
 
         public override float LuongNV()
         {
@@ -37,7 +45,7 @@ namespace BTKeThua_LeNgocSon_2033180055
 
         public override void xuat()
         {
-            Console.WriteLine("\n---------------Nhân Viên Theo Ca---------------\n");
+            //Console.WriteLine("\n---------------Nhân Viên Theo Ca---------------\n");
             base.xuat();
             Console.WriteLine("Số ca = " + soCa);
             Console.WriteLine("Lương = " + LuongNV());

@@ -55,6 +55,9 @@
     <Compile Include="Class Nguoi\NhanVien\NVHC.cs" />
     <Compile Include="Class Nguoi\NhanVien\NVTC.cs" />
     <Compile Include="Class Nguoi\NhanVien\NVTV.cs" />
+    <Compile Include="Class Phong\Phong.cs" />
+    <Compile Include="Class Phong\Room_A.cs" />
+    <Compile Include="Class Phong\Room_B.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Class Nguoi\SV\SinhVien.cs" />

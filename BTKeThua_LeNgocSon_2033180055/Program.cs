@@ -1,4 +1,5 @@
 ﻿using BTKeThua_LeNgocSon_2033180055.All_Class_Cargo;
+using BTKeThua_LeNgocSon_2033180055.Class_Phong;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -72,10 +73,16 @@ namespace BTKeThua_LeNgocSon_2033180055
 
             //NuocGiaiKhat n = new NuocGiaiKhat("3123", "Sting", "chai", 5, 40000);
             //n.xuat();
-            NuocGiaiKhat cg = new HH_CoGas("123", "C", "chai", 4, 12000);
-            cg.xuat();
-            NuocGiaiKhat kg = new HH_KhongGas("123", "C", "chai", 4, 12000);
-            kg.xuat();
+            //NuocGiaiKhat cg = new HH_CoGas("123", "C", "chai", 4, 12000);
+            //cg.xuat();
+            //NuocGiaiKhat kg = new HH_KhongGas("123", "C", "chai", 4, 12000);
+            //kg.xuat();
+
+            //---------------B6--------------//
+            Room_A ra = new Room_A("123", 2, 12, 15, 2);
+            ra.Xuat();
+            Room_B rb = new Room_B("123", 2, 12, 15, 4, 5);
+            rb.Xuat();
 
             Console.ReadKey();
         }

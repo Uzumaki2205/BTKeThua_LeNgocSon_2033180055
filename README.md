@@ -4,8 +4,8 @@
 ### Hệ thống quản lý bao gồm các yêu cầu chi tiết như sau:
 ### a. Lớp người:
 - Xây dựng lớp với các thuộc tính trên.
-- Xây dựng phương thức khởi tạo mặc định. Giới tính mặc định là “nam”
-- Xây dựng phương thức khởi tạo có tham số, nếu tham số giới tính truyền vào
+- Xây dựng phương thức khởi tạo mặc định. Giới tính mặc định là “nam”.
+- Xây dựng phương thức khởi tạo có tham số, nếu tham số giới tính truyền vào 
 không rơi vào một trong hai trường hợp “nam” hoặc “nữ” thì thuộc tính giới tính là “nam”
 - Xây dựng phương thức xuất thông tin một người.
 ### b. Lớp nhân viên
@@ -70,8 +70,8 @@ trị 2.34, 2.67, 3.0 và 3.3. Nếu tham số hệ số không thuộc một tr
 này thì thiết lập hệ số là 2.34. Thuộc tính chức vụ là một trong ba giá trị “trưởng
 khoa”, “phó khoa” và “giảng viên”. Nếu chức vụ không rơi vào một trong ba giá trị này thì thiết lập nó là “giảng viên”.
 - Xây dựng phương thức xuất giảng viên
-- Xây dựng phương thức tính lương của giảng viên như sau: lương = lương cơ bản *
-hệ số + phụ cấp chức vụ (PCCV). Trong đó, phụ cấp chức vụ được tính như sau:
+- Xây dựng phương thức tính lương của giảng viên như sau: lương = lương cơ bản * hệ số + phụ cấp chức vụ (PCCV). 
+Trong đó, phụ cấp chức vụ được tính như sau:
 - Nếu chức vụ là “trưởng khoa” thì PCCV = 5 * lương cơ bản
 - Nếu chức vụ là “phó khoa” thì PCCV = 4 * lương cơ bản
 - Giảng viên không có PCCV (hay PCCV = 0)
@@ -146,7 +146,7 @@ hệ số + phụ cấp chức vụ (PCCV). Trong đó, phụ cấp chức vụ 
 Cần tính lại thành tiền của mỗi loại vì các tính thuế mỗi loại khác nhau:
 - Đối với nước có gas: 7%
 - Đối với nước không có gas: 2%
-## Bài 5. Thiết kế và xây dựng lớp cho chương trình tính tiền phòng hàng tháng cho một cơ sở cho thuê phòng trọ. 
+## Bài 6. Thiết kế và xây dựng lớp cho chương trình tính tiền phòng hàng tháng cho một cơ sở cho thuê phòng trọ. 
 ## Biết rằng mỗi phòng đều có thông tin sau: Mã số phòng, số người ở, số điện và số nước. 
 ### Tiền phòng = 1500 * số điện * 3 + số nước * 10.
 Cơ sở chia phòng ra làm 2 loại khác nhau:
@@ -156,7 +156,7 @@ Cơ sở chia phòng ra làm 2 loại khác nhau:
 - Phòng loại B: Có thêm thông tin khối lượng giặt ủi (giatui), và số máy sử dụng internet (somay). 
 ###Tiền phòng được tính như sau:
 ### Tiền phòng = 2000 + 2 * số điện + 8 * số nước + giatui * 5 + somay * 100
-## Bài 6. Cục quản lý đường bộ cần quản lý các phương tiện giao thông. 
+## Bài 7. Cục quản lý đường bộ cần quản lý các phương tiện giao thông. 
 ## Mỗi phương tiện giao thông chứa các thông tin: biển số, tên xe, giá trị, thuế trước bạ. 
 ### Biết rằng thuế trước bạ = 10% * giá trị.
 Họ quản lý 2 loại xe chính:
